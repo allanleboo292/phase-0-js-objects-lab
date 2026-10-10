@@ -18,7 +18,6 @@ function updateTicketType(attendee, newTicketType){
   attendee.ticketType = newTicketType
 
 }
-updateTicketType(attendee , "Regular")
 
 function updateTicketPrice(attendee, newTicketPrice){
   attendee.ticketPrice = newTicketPrice
