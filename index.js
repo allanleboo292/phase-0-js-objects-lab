@@ -22,7 +22,7 @@ function updateTicketType(attendee, newTicketType){
 function updateTicketPrice(attendee, newTicketPrice){
   attendee.ticketPrice = newTicketPrice
 }
-updateTicketPrice(attendee, 180)
+
 
 function removeEventProperty(attendee){
   delete attendee.event
