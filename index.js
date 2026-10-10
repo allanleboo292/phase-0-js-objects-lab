@@ -1,7 +1,37 @@
 //Write your code here
+const attendee = {
+  attendeeId:"T001",
+  name : "Alice smith",
+  event : "JavaScript Conference",
+  ticketType: "VIP",
+  ticketPrice: 150
 
+}
+function logAttendeeName(name){
+  console.log(attendee.name)
+}
+ function logTicketPrice(attendee){
+  console.log(attendee.ticketPrice)
+ }
 
+function updateTicketType(attendee, newTicketType){
+  attendee.ticketType = newTicketType
 
+}
+updateTicketType(attendee , "Regular")
+
+function updateTicketPrice(attendee, newTicketPrice){
+  attendee.ticketPrice = newTicketPrice
+}
+updateTicketPrice(attendee, 180)
+
+function removeEventProperty(attendee){
+  delete attendee.event
+}
+
+function addCheckedInProperty(attendee){
+  attendee.checkedIn = true
+}
 //Needed for the tests to work. Don't modify
 module.exports = {
   ...(typeof attendee !== 'undefined' && { attendee }),
